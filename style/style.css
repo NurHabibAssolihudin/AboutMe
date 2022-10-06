@@ -1,0 +1,181 @@
+/* css reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+/* body */
+
+body {
+    background: linear-gradient(#FBFF7C, #ffffff);
+}
+
+
+/* style navbar */
+
+nav {
+    background-color: #E4663A;
+    height: 60px;
+    width: 100%;
+    color: #FBFF7C;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
+    position: absolute;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    line-height: 60px;
+}
+
+ul {
+    margin-left: auto;
+    line-height: 50px;
+}
+
+ul li {
+    display: inline-block;
+    margin: 5px;
+}
+
+ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+ul li a:hover {
+    color: #FBFF7C;
+}
+
+
+/* main */
+
+main {
+    padding-top: 60px;
+}
+
+/* profile */
+
+#profile {
+    text-align: center;
+    margin: 20px auto;
+    width: 90%;
+    background:
+            linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+            url(../img/background.jpg);
+        background-size: cover;
+    border-radius: 30px;
+    height: 100vh;
+    color: white;
+}
+
+#profile img {
+    margin-top: 10%;
+    border-radius: 50%;
+    border: 3px solid rgba(219, 219, 219, 0.647);
+}
+
+/* about */
+
+#about {
+    padding-top: 50px;
+    box-sizing: border-box;
+    color: rgb(0, 0, 0);
+}
+
+.row {
+    width: 80%;
+    margin: auto;
+}
+
+.col {
+    margin: 50px 0;
+}
+
+.col2 {
+    margin-left: 15%;
+}
+
+
+/* project */
+
+#project {
+    padding-top: 50px;
+    text-align: center;
+    background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1));
+}
+
+#project h1 {
+    margin: 50px;
+    color: white;
+}
+
+.card {
+    width: 300px;
+    background-color: #fff;
+    border-radius: 5%;
+    overflow: hidden;
+    display: inline-block;
+    margin: 20px;
+    border: 5px solid white;
+}
+
+.card h5, .card p {
+    margin: 5px
+}
+
+
+/* kontact */
+
+#kontact {
+    padding-top: 50px;
+}
+
+#kontact form h1 {
+    margin: 30px;
+}
+
+#kontact form {
+    border-radius: 20px;
+    padding: 10px;
+    width: 40%;
+    margin: 50px auto;
+    background-color: rgba(225, 225, 225, 0.3);
+    text-align: center;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 5px;
+    border: none;
+    margin: 2px;
+    border-radius: 13px;
+    overflow: hidden;
+}
+
+#kontact table {
+    margin: auto;
+}
+
+
+/* footer */
+
+footer {
+    background-color: #353535;
+    color: white;
+    text-align: center;
+    height: 30px;
+}
+
+footer h5 {
+    line-height: 30px;
+}
+
+footer h5 span {
+    color: red;
+}
