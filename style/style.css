@@ -6,8 +6,13 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+<<<<<<< HEAD
 html {
     scroll-behavior: smooth;
+=======
+html{
+    scroll-behavior: smooth; 
+>>>>>>> origin/main
 }
 
 /* body */
@@ -100,6 +105,7 @@ main {
 
 .col {
     margin: 50px 0;
+    text-indent: 40px;
 }
 
 p {
@@ -184,9 +190,12 @@ footer h5 {
 footer h5 span {
     color: red;
 }
+<<<<<<< HEAD
 
 /* Resposif */
 
 @media screen and (max-width:720px) {
     
 }
+=======
+>>>>>>> origin/main
