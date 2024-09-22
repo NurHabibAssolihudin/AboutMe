@@ -103,11 +103,11 @@ header nav ul li a.creator-link {
     background: var(--theme1);
 }
 
-header nav ul li a.creator-link:hover {
+header nav .main-nav ul li a.creator-link:hover {
     background: #0074da;
 }
 
-header nav ul li a {
+header nav .main-nav ul li a {
     padding: 0.6em 1em;
     margin: 0 0.5em;
     color: #e3e3e3;
@@ -118,7 +118,7 @@ header nav ul li a {
     transition: 0.5s;
 }
 
-header nav ul li a:hover {
+header nav .main-nav ul li a:hover {
     background: rgba(227, 227, 227, 0.3);
     box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
 }
@@ -134,7 +134,7 @@ header nav .opt-nav {
 
 header .opt-nav li {
     padding: 0.1em 0.3em;
-    color: var(--theme2);
+    color: var(--theme2-color);
     background: rgba(255, 255, 255, 0.1);
     box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
     text-decoration: none;
@@ -148,13 +148,31 @@ header .opt-nav li:hover {
     box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
 }
 
+header .relative-nav {
+    display: none;
+}
+
+header .relative-nav ul li {
+    padding: 0.5em 0;
+}
+
+header .relative-nav ul li a {
+    color: var(--theme2-color);
+    text-decoration: none;
+}
+
+header .relative-nav .creator-link {
+    padding: 1em;
+    margin-bottom: 1em;
+}
+
 header .content {
     width: 100%;
     height: 100vh;
     display: flex;
     align-items: center;
-    flex-wrap: wrap-reverse;
     justify-content: space-around;
+    flex-wrap: wrap-reverse;
 }
 
 header .description {
@@ -237,12 +255,43 @@ header .copyright a {
     }
 
     @media (max-width: 875px) and (min-width: 1px) {
+        header nav {
+            display: flex;
+            flex-direction: column;
+            background-color: #fff;
+        }
+
+        header nav h1 {
+            box-shadow: none;
+        }
+
         header nav .default-nav {
+            margin-top: 1em;
             display: none;
         }
 
         header nav .opt-nav {
+            margin-top: 1em;
             display: flex;
+        }
+
+        .relative-nav.responsive {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+        }
+
+        .relative-nav.responsive ul {
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+        }
+
+        .relative-nav.responsive a {
+            float: none;
+            display: block;
+            text-align: left;
         }
     }
 

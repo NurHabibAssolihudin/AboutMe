@@ -39,3 +39,12 @@ function erase() {
 document.addEventListener("DOMContentLoaded", function() { // On DOM Load initiate the effect
   if(textArray.length) setTimeout(type, newTextDelay + 250);
 });
+
+function responsiveNav() {
+  var x = document.getElementById("relative-nav");
+  if (x.className === "relative-nav") {
+    x.className += " responsive";
+  } else {
+    x.className = "relative-nav";
+  }
+}
