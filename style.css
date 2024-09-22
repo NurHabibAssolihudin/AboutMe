@@ -240,9 +240,10 @@ header .copyright a {
 
 @media (max-width: 890px) and (min-width: 1px) {
 
-    @media (max-width: 886px) and (min-width: 1px) {
+    @media (max-width: 890px) and (min-width: 1px) {
         header {
-            height: 120vh;
+            padding-top: 5em;
+            align-items: center;
         }
 
         header .account {
@@ -254,7 +255,23 @@ header .copyright a {
         }
     }
 
-    @media (max-width: 875px) and (min-width: 1px) {
+    @media (max-width: 890px) and (min-width: 1px) {
+        header .content {
+            height: auto;
+            align-items: start;
+        }
+
+        header .content h1 {
+            font-size: medium;
+        }
+
+        header .description {
+            margin: 0.5em 2em;
+            color: #e3e3e3;
+            font-size: medium;
+            transition: 0.5s;
+        }
+
         header nav {
             display: flex;
             flex-direction: column;
