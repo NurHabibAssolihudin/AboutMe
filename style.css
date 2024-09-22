@@ -153,6 +153,7 @@ header .content {
     height: 100vh;
     display: flex;
     align-items: center;
+    flex-wrap: wrap-reverse;
     justify-content: space-around;
 }
 
